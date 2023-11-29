@@ -1,0 +1,19 @@
+.addToDo {
+    /* height: 400px; */
+    width: 390px;
+    border-radius: 12px;
+    /* border: solid orange; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: auto;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #e8ecef 0%, #c7c9e0 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}

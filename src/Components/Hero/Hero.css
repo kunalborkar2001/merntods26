@@ -1,0 +1,13 @@
+.hero {
+    margin: auto;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .hero .css-12xj993-MuiGrid2-root {
+        display: flex;
+        justify-content: center;
+        width: 500px !important;
+    }
+    
+} */
