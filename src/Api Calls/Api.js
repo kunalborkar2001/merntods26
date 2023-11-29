@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ngrokUrl = "http://localhost:3000"; // Assuming your ngrok server is running on HTTP
+const ngrokUrl = "https://merntodos.onrender.com"; // Assuming your ngrok server is running on HTTP
 
 export const getAllTodos = async () => {
     try {
