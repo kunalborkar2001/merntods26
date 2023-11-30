@@ -3,7 +3,7 @@
     width: 390px;
     border-radius: 12px;
     /* border: solid orange; */
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 20%;
@@ -15,5 +15,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    overflow: hidden;
     padding: 10px;
+    z-index: 999;
 }
