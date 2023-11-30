@@ -5,7 +5,7 @@ import { getAllTodos } from '../../Api Calls/Api';
 import SingleCard from '../Card/SingleCard'
 import { useState } from 'react';
 import { useEffect } from 'react';
-import "./hero.css"
+import "./Hero.css"
 import { deleteTodo } from '../../Api Calls/Api';
 
 
