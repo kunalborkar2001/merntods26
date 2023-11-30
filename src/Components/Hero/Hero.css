@@ -1,7 +1,22 @@
 .hero {
     margin: auto;
+    position: relative;
 }
 
+.progress {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.progress img {
+    height: 20%;
+    width: 16%;
+}
 
 /* @media only screen and (max-width: 600px) {
     .hero .css-12xj993-MuiGrid2-root {

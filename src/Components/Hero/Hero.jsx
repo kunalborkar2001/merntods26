@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import "./hero.css"
 import { deleteTodo } from '../../Api Calls/Api';
 
+
 const Hero = () => {
     const [allTodos, setAllTodos] = useState([]);
 
@@ -45,14 +46,14 @@ const Hero = () => {
         // console.log(allTodos);
     })
 
-    const handleDelete = async(e) => {
+    const handleDelete = async (e) => {
         await deleteTodo(e)
         let undeleted = allTodos.filter((elem) => elem._id != e)
-        
+
         setAllTodos(undeleted)
     }
 
-    
+
 
     return (
         <div className='hero'>
@@ -62,11 +63,13 @@ const Hero = () => {
                         allTodos.map((elem) => (
                             <Grid key={elem._id} xs={6} lg={3} md={4} sm={6} >
                                 <SingleCard _id={elem._id} name={elem.name} description={elem.description} startDate={dateFormat(new Date(elem.startDate))}
-                                    endDate={dateFormat(new Date(elem.endDate))} completed={elem.completed} deleteTodo={handleDelete}/>
+                                    endDate={dateFormat(new Date(elem.endDate))} completed={elem.completed} deleteTodo={handleDelete} />
                             </Grid>
                         ))
                     ) : (
-                        <div>No todos available</div>
+                        <div className='progress'>
+                            <img src="https://cdn.dribbble.com/users/347696/screenshots/2665029/dribbble-progress-bar.gif" alt="kunalborkar2001@gmail.com" />
+                        </div>
                     )}
                 </Grid>
             </Box>
